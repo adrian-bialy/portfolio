@@ -1,0 +1,18 @@
+# ── Domain experience ────────────────────────────────────────────
+# `id` is referenced from projects.yaml (domain: ...) — keep ids stable.
+
+domains:
+  - id: banking
+    name: Banking & Finance
+    emoji: "🏦"
+    blurb: Regulatory reporting, transaction data platforms, risk analytics.
+
+  - id: oilgas
+    name: Oil & Gas
+    emoji: "🛢️"
+    blurb: Sensor telemetry ingestion, production monitoring dashboards.
+
+  - id: logistics
+    name: Logistics
+    emoji: "🚚"
+    blurb: Fleet tracking pipelines, route optimization data marts.

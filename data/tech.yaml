@@ -1,0 +1,49 @@
+# ── Tech stack ───────────────────────────────────────────────────
+# Categories render as filter pills; each skill is a chip.
+# `id` is referenced from projects.yaml (tech: [...]) — keep ids stable.
+
+categories:
+  - name: Languages
+    emoji: "💬"
+    skills:
+      - { id: python, name: Python, emoji: "🐍" }
+      - { id: sql, name: SQL, emoji: "🧮" }
+      - { id: scala, name: Scala, emoji: "🌀" }
+      - { id: bash, name: Bash, emoji: "🐚" }
+
+  - name: Data & ETL
+    emoji: "🔄"
+    skills:
+      - { id: spark, name: Apache Spark, emoji: "⚡" }
+      - { id: kafka, name: Apache Kafka, emoji: "📨" }
+      - { id: dbt, name: dbt, emoji: "🧱" }
+      - { id: flink, name: Apache Flink, emoji: "🌊" }
+
+  - name: Databases & Warehouses
+    emoji: "🗄️"
+    skills:
+      - { id: postgres, name: PostgreSQL, emoji: "🐘" }
+      - { id: snowflake, name: Snowflake, emoji: "❄️" }
+      - { id: bigquery, name: BigQuery, emoji: "🔍" }
+      - { id: redis, name: Redis, emoji: "🔴" }
+
+  - name: Cloud & DevOps
+    emoji: "☁️"
+    skills:
+      - { id: aws, name: AWS, emoji: "🟧" }
+      - { id: gcp, name: Google Cloud, emoji: "🌈" }
+      - { id: docker, name: Docker, emoji: "🐳" }
+      - { id: kubernetes, name: Kubernetes, emoji: "☸️" }
+      - { id: terraform, name: Terraform, emoji: "🏗️" }
+
+  - name: Orchestration
+    emoji: "🎼"
+    skills:
+      - { id: airflow, name: Apache Airflow, emoji: "🌬️" }
+      - { id: dagster, name: Dagster, emoji: "🪨" }
+
+  - name: BI & Analytics
+    emoji: "📊"
+    skills:
+      - { id: powerbi, name: Power BI, emoji: "📈" }
+      - { id: grafana, name: Grafana, emoji: "📉" }

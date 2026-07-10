@@ -1,0 +1,62 @@
+# ── Portfolio / engagements ──────────────────────────────────────
+# `domain` must match an id from domains.yaml.
+# `tech` entries must match skill ids from tech.yaml.
+
+projects:
+  - title: Regulatory Reporting Data Platform
+    client: Tier-1 European Bank
+    location: Frankfurt, Germany
+    domain: banking
+    team_size: 8
+    period: 2024 — present
+    responsibilities:
+      - Designed the lakehouse architecture for daily regulatory feeds
+      - Led a squad of 3 data engineers, owned delivery roadmap
+      - Introduced data quality gates and SLA monitoring
+    deliverables:
+      - Spark-based ingestion framework processing 2 TB/day
+      - Automated BCBS 239 lineage documentation
+      - Self-service dbt models for the reporting team
+    tech: [python, sql, spark, dbt, snowflake, airflow, aws, terraform]
+
+  - title: Real-time Transaction Fraud Signals
+    client: Retail Bank
+    location: Warsaw, Poland
+    domain: banking
+    team_size: 5
+    period: 2023 — 2024
+    responsibilities:
+      - Built streaming feature pipelines for the fraud ML team
+      - Defined schema governance for event contracts
+    deliverables:
+      - Kafka + Flink pipeline with sub-second feature latency
+      - Feature store backed by Redis with 40+ online features
+    tech: [python, kafka, flink, redis, postgres, kubernetes, docker]
+
+  - title: Production Telemetry Ingestion
+    client: Oil & Gas Operator
+    location: Stavanger, Norway
+    domain: oilgas
+    team_size: 6
+    period: 2022 — 2023
+    responsibilities:
+      - Integrated 200+ rig sensors into a central telemetry platform
+      - Owned CI/CD and infrastructure-as-code setup
+    deliverables:
+      - IoT ingestion layer on GCP handling 50k events/sec
+      - Grafana dashboards for production monitoring
+    tech: [python, kafka, bigquery, gcp, terraform, grafana, docker]
+
+  - title: Fleet Analytics Data Mart
+    client: Pan-European Logistics Provider
+    location: Rotterdam, Netherlands
+    domain: logistics
+    team_size: 4
+    period: 2021 — 2022
+    responsibilities:
+      - Modeled the fleet & route data mart used by 30 analysts
+      - Migrated legacy SSIS jobs to a modern ELT stack
+    deliverables:
+      - dbt + Snowflake data mart with documented models
+      - Power BI reporting suite for on-time-delivery KPIs
+    tech: [sql, dbt, snowflake, airflow, powerbi, python]

@@ -1,0 +1,22 @@
+# ── Personal details ─────────────────────────────────────────────
+# Edit freely: everything here is rendered in the hero section.
+
+name: Jane Doe
+role: Data Engineer
+tagline: I design and build reliable data platforms and pipelines that turn raw data into business value.
+location: Warsaw, Poland
+avatar_emoji: "🛠️"   # shown if no photo; replace with photo: assets/me.jpg later
+
+contact:
+  - label: Email
+    emoji: "✉️"
+    value: jane.doe@example.com
+    href: mailto:jane.doe@example.com
+  - label: GitHub
+    emoji: "🐙"
+    value: github.com/janedoe
+    href: https://github.com/janedoe
+  - label: LinkedIn
+    emoji: "💼"
+    value: linkedin.com/in/janedoe
+    href: https://www.linkedin.com/in/janedoe

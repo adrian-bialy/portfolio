@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV / Portfolio</title>
+  <meta name="description" content="Interactive CV and portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+
+  <main class="container">
+    <header id="hero" class="hero section"><!-- rendered by app.js --></header>
+
+    <section id="tech" class="section">
+      <h2 class="section-title"><span class="section-emoji">🧰</span> Tech Stack</h2>
+      <p class="section-hint">Click a category to filter skills, click a skill to filter projects.</p>
+      <div id="tech-filters" class="pill-row"></div>
+      <div id="tech-grid" class="tech-grid"></div>
+    </section>
+
+    <section id="domains" class="section">
+      <h2 class="section-title"><span class="section-emoji">🧭</span> Domain Experience</h2>
+      <p class="section-hint">Click a domain to filter projects.</p>
+      <div id="domain-grid" class="domain-grid"></div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title"><span class="section-emoji">🎓</span> Education &amp; Certificates</h2>
+      <div class="edu-layout">
+        <div id="education-list" class="edu-col"></div>
+        <div id="certificates-list" class="edu-col"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2 class="section-title"><span class="section-emoji">📁</span> Portfolio</h2>
+      <div id="active-filters" class="active-filters hidden"></div>
+      <div id="project-list" class="project-list"></div>
+      <p id="no-results" class="no-results hidden">No projects match the current filters.</p>
+    </section>
+
+    <footer class="footer">
+      <span id="footer-text"></span>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

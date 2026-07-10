@@ -1,0 +1,38 @@
+# ── Education & certificates ─────────────────────────────────────
+# `logo` is optional: a path (e.g. assets/logos/wut.svg) or full URL.
+# If omitted, the emoji is shown instead.
+
+education:
+  - degree: MSc in Computer Science
+    school: Warsaw University of Technology
+    emoji: "🎓"
+    logo: assets/logos/university.svg
+    period: 2015 — 2017
+    details: Specialization in distributed systems and data processing.
+
+  - degree: BSc in Computer Science
+    school: Warsaw University of Technology
+    emoji: "🎓"
+    logo: assets/logos/university.svg
+    period: 2011 — 2015
+
+certificates:
+  - name: Google Cloud Professional Data Engineer
+    issuer: Google Cloud
+    emoji: "📜"
+    logo: assets/logos/gcp.svg
+    year: 2024
+    url: https://example.com/cert/gcp-pde
+
+  - name: AWS Certified Data Analytics — Specialty
+    issuer: Amazon Web Services
+    emoji: "📜"
+    logo: assets/logos/aws.svg
+    year: 2023
+    url: https://example.com/cert/aws-das
+
+  - name: SnowPro Core Certification
+    issuer: Snowflake
+    emoji: "📜"
+    logo: assets/logos/snowflake.svg
+    year: 2022
