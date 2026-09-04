@@ -1,38 +1,58 @@
 # ── Education & certificates ─────────────────────────────────────
-# `logo` is optional: a path (e.g. assets/logos/wut.svg) or full URL.
-# If omitted, the emoji is shown instead.
+# `logo` is optional: a path (e.g. assets/logos/university.svg) or full URL.
+# If omitted, the emoji is shown instead. Certificate logos reuse the
+# real vendor marks vendored in assets/logos/, same as data/tech.yaml.
 
 education:
-  - degree: MSc in Computer Science
-    school: Warsaw University of Technology
+  - degree: Cloud DevOps Engineer Expert (Postgraduate)
+    school: WSB Merito University, Wrocław
     emoji: "🎓"
     logo: assets/logos/university.svg
-    period: 2015 — 2017
-    details: Specialization in distributed systems and data processing.
+    period: 2024 — 2025
+    details: Postgraduate program in cloud infrastructure, CI/CD and DevOps practices.
 
-  - degree: BSc in Computer Science
-    school: Warsaw University of Technology
+  - degree: Big Data (Postgraduate)
+    school: WSB Merito University, Wrocław
     emoji: "🎓"
     logo: assets/logos/university.svg
-    period: 2011 — 2015
+    period: 2020 — 2021
+    details: Finance & Management Department — distributed data processing and analytics.
+
+  - degree: MSc — IT Systems in Logistics
+    school: WSB Merito University, Wrocław
+    emoji: "🎓"
+    logo: assets/logos/university.svg
+    period: 2019 — 2021
+    details: Master's degree, Finance & Management Department.
+
+  - degree: BSc — Logistics in Commerce and Services
+    school: University of Economics, Wrocław
+    emoji: "🎓"
+    logo: assets/logos/university.svg
+    period: 2016 — 2019
+    details: Faculty of Management, Computer Science and Finance.
 
 certificates:
+  - name: Databricks Certified Data Engineer Professional
+    issuer: Databricks
+    emoji: "📜"
+    logo: assets/logos/databricks.svg
+    year: 2025
+
+  - name: Microsoft Certified — Power BI Data Analyst Associate
+    issuer: Microsoft
+    emoji: "📜"
+    logo: assets/logos/powerbi.svg
+    year: 2022
+
   - name: Google Cloud Professional Data Engineer
     issuer: Google Cloud
     emoji: "📜"
-    logo: assets/logos/gcp.svg
-    year: 2024
-    url: https://example.com/cert/gcp-pde
-
-  - name: AWS Certified Data Analytics — Specialty
-    issuer: Amazon Web Services
-    emoji: "📜"
-    logo: assets/logos/aws.svg
-    year: 2023
-    url: https://example.com/cert/aws-das
-
-  - name: SnowPro Core Certification
-    issuer: Snowflake
-    emoji: "📜"
-    logo: assets/logos/snowflake.svg
+    logo: assets/logos/googlecloud.svg
     year: 2022
+
+  - name: Tableau Desktop Intermediate
+    issuer: Tableau
+    emoji: "📜"
+    logo: assets/logos/tableau.svg
+    year: 2020

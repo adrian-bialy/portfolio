@@ -1,49 +1,71 @@
 # ── Tech stack ───────────────────────────────────────────────────
 # Categories render as filter pills; each skill is a chip.
 # `id` is referenced from projects.yaml (tech: [...]) — keep ids stable.
+# `icon` is a real vendor logo (local assets/logos/... path, or URL);
+# `emoji` is shown as a fallback if the icon is missing/fails to load,
+# and as a decorative accent. Logos are self-hosted SVGs under
+# assets/logos/ (sourced from Simple Icons / vendor marks). SQL, DAX,
+# VBA, SSIS, Vertica and MS SQL Server have no freely-licensed vendor
+# logo, so they keep their emoji.
 
 categories:
   - name: Languages
     emoji: "💬"
     skills:
-      - { id: python, name: Python, emoji: "🐍" }
-      - { id: sql, name: SQL, emoji: "🧮" }
-      - { id: scala, name: Scala, emoji: "🌀" }
-      - { id: bash, name: Bash, emoji: "🐚" }
+      - { id: sql, name: SQL / T-SQL, emoji: "🧮" }
+      - { id: python, name: Python, emoji: "🐍", icon: "assets/logos/python.svg" }
+      - { id: dax, name: DAX, emoji: "📐" }
+      - { id: bash, name: Bash, emoji: "🐚", icon: "assets/logos/gnubash.svg" }
+      - { id: vba, name: VBA, emoji: "📎" }
 
-  - name: Data & ETL
+  - name: Data Engineering & ETL
     emoji: "🔄"
     skills:
-      - { id: spark, name: Apache Spark, emoji: "⚡" }
-      - { id: kafka, name: Apache Kafka, emoji: "📨" }
-      - { id: dbt, name: dbt, emoji: "🧱" }
-      - { id: flink, name: Apache Flink, emoji: "🌊" }
-
-  - name: Databases & Warehouses
-    emoji: "🗄️"
-    skills:
-      - { id: postgres, name: PostgreSQL, emoji: "🐘" }
-      - { id: snowflake, name: Snowflake, emoji: "❄️" }
-      - { id: bigquery, name: BigQuery, emoji: "🔍" }
-      - { id: redis, name: Redis, emoji: "🔴" }
-
-  - name: Cloud & DevOps
-    emoji: "☁️"
-    skills:
-      - { id: aws, name: AWS, emoji: "🟧" }
-      - { id: gcp, name: Google Cloud, emoji: "🌈" }
-      - { id: docker, name: Docker, emoji: "🐳" }
-      - { id: kubernetes, name: Kubernetes, emoji: "☸️" }
-      - { id: terraform, name: Terraform, emoji: "🏗️" }
-
-  - name: Orchestration
-    emoji: "🎼"
-    skills:
-      - { id: airflow, name: Apache Airflow, emoji: "🌬️" }
-      - { id: dagster, name: Dagster, emoji: "🪨" }
+      - { id: databricks, name: Databricks, emoji: "🧱", icon: "assets/logos/databricks.svg" }
+      - { id: spark, name: PySpark, emoji: "⚡", icon: "assets/logos/apachespark.svg" }
+      - { id: dbt, name: dbt, emoji: "🔶", icon: "assets/logos/dbt.svg" }
+      - { id: airflow, name: Apache Airflow, emoji: "🌬️", icon: "assets/logos/apacheairflow.svg" }
+      - { id: ssis, name: SSIS, emoji: "🔀" }
+      - { id: informatica, name: Informatica, emoji: "ℹ️", icon: "assets/logos/informatica.svg" }
 
   - name: BI & Analytics
     emoji: "📊"
     skills:
-      - { id: powerbi, name: Power BI, emoji: "📈" }
-      - { id: grafana, name: Grafana, emoji: "📉" }
+      - { id: powerbi, name: Power BI, emoji: "📈", icon: "assets/logos/powerbi.svg" }
+      - { id: tableau, name: Tableau, emoji: "📊", icon: "assets/logos/tableau.svg" }
+      - { id: qlikview, name: QlikView, emoji: "📗", icon: "assets/logos/qlik.svg" }
+      - { id: sapbo, name: SAP BusinessObjects, emoji: "🧩", icon: "assets/logos/sap.svg" }
+
+  - name: Databases & Warehouses
+    emoji: "🗄️"
+    skills:
+      - { id: mssql, name: MS SQL Server, emoji: "🗄️" }
+      - { id: postgres, name: PostgreSQL, emoji: "🐘", icon: "assets/logos/postgresql.svg" }
+      - { id: oracle, name: Oracle, emoji: "🔴", icon: "assets/logos/oracle.svg" }
+      - { id: teradata, name: Teradata, emoji: "🟠", icon: "assets/logos/teradata.svg" }
+      - { id: redshift, name: Amazon Redshift, emoji: "🔺", icon: "assets/logos/redshift.svg" }
+      - { id: vertica, name: Vertica, emoji: "🟦" }
+      - { id: saphana, name: SAP HANA, emoji: "🧠", icon: "assets/logos/sap.svg" }
+      - { id: impala, name: Apache Impala, emoji: "🦌", icon: "assets/logos/impala.svg" }
+
+  - name: Cloud & DevOps
+    emoji: "☁️"
+    skills:
+      - { id: azure, name: Microsoft Azure, emoji: "🔷", icon: "assets/logos/azure.svg" }
+      - { id: aws, name: AWS, emoji: "🟧", icon: "assets/logos/aws.svg" }
+      - { id: gcp, name: Google Cloud, emoji: "🌈", icon: "assets/logos/googlecloud.svg" }
+      - { id: docker, name: Docker, emoji: "🐳", icon: "assets/logos/docker.svg" }
+      - { id: podman, name: Podman, emoji: "🦭", icon: "assets/logos/podman.svg" }
+      - { id: kubernetes, name: Kubernetes, emoji: "☸️", icon: "assets/logos/kubernetes.svg" }
+      - { id: terraform, name: Terraform, emoji: "🏗️", icon: "assets/logos/terraform.svg" }
+      - { id: githubactions, name: CI/CD (GitHub Actions), emoji: "🔁", icon: "assets/logos/githubactions.svg" }
+      - { id: git, name: Git, emoji: "🔧", icon: "assets/logos/git.svg" }
+      - { id: nginx, name: Nginx, emoji: "🌐", icon: "assets/logos/nginx.svg" }
+
+  - name: Backend & Automation
+    emoji: "🧰"
+    skills:
+      - { id: fastapi, name: FastAPI, emoji: "⚡", icon: "assets/logos/fastapi.svg" }
+      - { id: postman, name: Postman, emoji: "📮", icon: "assets/logos/postman.svg" }
+      - { id: uipath, name: UiPath, emoji: "🤖", icon: "assets/logos/uipath.svg" }
+      - { id: kibana, name: Kibana, emoji: "📟", icon: "assets/logos/kibana.svg" }

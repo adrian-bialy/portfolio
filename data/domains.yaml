@@ -2,17 +2,27 @@
 # `id` is referenced from projects.yaml (domain: ...) — keep ids stable.
 
 domains:
+  - id: data-platform
+    name: Data Platform Engineering
+    emoji: "⚙️"
+    blurb: Config-driven multi-source ingestion, Databricks/PySpark pipelines, and cloud warehouse migrations.
+
   - id: banking
     name: Banking & Finance
     emoji: "🏦"
-    blurb: Regulatory reporting, transaction data platforms, risk analytics.
+    blurb: Non-financial risk & compliance analytics, data marts, and secured Power BI reporting.
 
-  - id: oilgas
-    name: Oil & Gas
-    emoji: "🛢️"
-    blurb: Sensor telemetry ingestion, production monitoring dashboards.
+  - id: manufacturing
+    name: Manufacturing & Supply Chain
+    emoji: "🏭"
+    blurb: EMEA supply-chain BI, legacy ETL maintenance, and plant/warehouse reporting across dozens of sites.
 
   - id: logistics
-    name: Logistics
+    name: Logistics & Transportation
     emoji: "🚚"
-    blurb: Fleet tracking pipelines, route optimization data marts.
+    blurb: Transportation analytics, operational reporting, and RPA automation for logistics operations.
+
+  - id: customer-experience
+    name: Customer Experience
+    emoji: "🎧"
+    blurb: Contact-center performance analytics with queue- and agent-level KPI dashboards.

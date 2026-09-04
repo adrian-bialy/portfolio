@@ -1,22 +1,25 @@
 # ── Personal details ─────────────────────────────────────────────
 # Edit freely: everything here is rendered in the hero section.
 
-name: Jane Doe
-role: Data Engineer
-tagline: I design and build reliable data platforms and pipelines that turn raw data into business value.
-location: Warsaw, Poland
+name: Adrian Biały
+role: Senior Big Data Engineer, Software Developer
+tagline: >-
+  6+ years designing config-driven ingestion platforms, PySpark/Databricks
+  pipelines, and Power BI analytics that turn raw multi-source data into
+  business decisions.
+location: Wrocław, Poland
 avatar_emoji: "🛠️"   # shown if no photo; replace with photo: assets/me.jpg later
 
 contact:
   - label: Email
     emoji: "✉️"
-    value: jane.doe@example.com
-    href: mailto:jane.doe@example.com
+    value: bialy.adrian@outlook.com
+    href: mailto:bialy.adrian@outlook.com
   - label: GitHub
     emoji: "🐙"
-    value: github.com/janedoe
-    href: https://github.com/janedoe
+    value: github.com/adrian-bialy
+    href: https://github.com/adrian-bialy
   - label: LinkedIn
     emoji: "💼"
-    value: linkedin.com/in/janedoe
-    href: https://www.linkedin.com/in/janedoe
+    value: linkedin.com/in/adrian-bialy
+    href: https://www.linkedin.com/in/adrian-bialy

@@ -36,6 +36,18 @@ function logoHtml(logo, emoji) {
   return `<span class="edu-logo">${esc(emoji || "🎓")}</span>`;
 }
 
+/* Small icon badge for tech chips/tags: real logo (icon) with a white
+   backdrop for legibility, falling back to the plain emoji if the
+   icon is absent or fails to load. `size` is "chip" or "tag". */
+function iconBadgeHtml(icon, emoji, size) {
+  const sizeClass = `size-${size}`;
+  if (icon) {
+    return `<span class="icon-badge ${sizeClass}"><img src="${esc(icon)}" alt="" loading="lazy"
+      onerror="this.parentElement.classList.add('emoji-only');this.parentElement.textContent='${esc(emoji || "")}'"></span>`;
+  }
+  return `<span class="icon-badge ${sizeClass} emoji-only">${esc(emoji || "")}</span>`;
+}
+
 /* ── Theme toggle ────────────────────────────────────────────── */
 
 function initTheme() {
@@ -110,7 +122,7 @@ function renderTechGrid() {
           ${cat.skills
             .map(
               (s) => `<button class="chip ${state.selectedTech.has(s.id) ? "active" : ""}"
-                data-skill="${esc(s.id)}"><span>${esc(s.emoji)}</span>${esc(s.name)}</button>`
+                data-skill="${esc(s.id)}">${iconBadgeHtml(s.icon, s.emoji, "chip")}${esc(s.name)}</button>`
             )
             .join("")}
         </div>
@@ -194,7 +206,7 @@ function renderProjects() {
         .map((id) => {
           const s = state.skillById.get(id);
           return s
-            ? `<span class="tech-tag"><span>${esc(s.emoji)}</span>${esc(s.name)}</span>`
+            ? `<span class="tech-tag">${iconBadgeHtml(s.icon, s.emoji, "tag")}${esc(s.name)}</span>`
             : `<span class="tech-tag">${esc(id)}</span>`;
         })
         .join("");
@@ -239,7 +251,7 @@ function renderActiveFilters() {
   for (const id of state.selectedTech) {
     const s = state.skillById.get(id);
     tags.push(
-      `<button class="filter-tag" data-remove-tech="${esc(id)}">${esc(s.emoji)} ${esc(s.name)} ✕</button>`
+      `<button class="filter-tag" data-remove-tech="${esc(id)}">${iconBadgeHtml(s.icon, s.emoji, "tag")}${esc(s.name)} ✕</button>`
     );
   }
 

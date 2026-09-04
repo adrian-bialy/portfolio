@@ -1,62 +1,129 @@
 # ── Portfolio / engagements ──────────────────────────────────────
 # `domain` must match an id from domains.yaml.
 # `tech` entries must match skill ids from tech.yaml.
+# Ordered most-recent first.
 
 projects:
-  - title: Regulatory Reporting Data Platform
-    client: Tier-1 European Bank
-    location: Frankfurt, Germany
+  - title: Launchpad Data Ingestion Platform
+    client: Norwegian Company
+    location: Remote · Norway
+    domain: data-platform
+    team_size: 5-10
+    period: 2023 — present
+    responsibilities:
+      - Design, develop and maintain Databricks PySpark ingestion pipelines and jobs
+      - Set up CI/CD processes and Databricks Asset Bundles for dev/test/prod deployment
+      - Requirement analysis, code review, and code/data testing
+      - Database support, performance tuning and optimization
+    deliverables:
+      - Config-driven ingestion platform pulling multi-source data via JDBC and REST APIs into a Data Lake and consumer databases
+      - Reproducible, environment-promoted deployments via Databricks Asset Bundles
+      - FastAPI services and PySpark processing layer worked out jointly with DevOps and software teams
+    tech: [python, spark, databricks, fastapi, azure, postgres, mssql, githubactions, terraform]
+
+  - title: Contact Center Performance Dashboard
+    client: UK Company
+    location: Remote · United Kingdom
+    domain: customer-experience
+    team_size: 5-10
+    period: 2024
+    responsibilities:
+      - Requirements gathering and analysis with stakeholders
+      - Dashboard development and KPI calculation & visualization
+      - Documentation and reporting
+    deliverables:
+      - Interactive Power BI dashboards over an AWS-hosted contact center
+      - Queue- and agent-level KPI views enabling data-driven operational decisions
+    tech: [powerbi, sql, aws]
+
+  - title: Teradata → Redshift Migration
+    client: Swedish Company
+    location: Remote · Sweden
+    domain: data-platform
+    team_size: 20-30
+    period: 2024
+    responsibilities:
+      - Validate dbt models migrated from Informatica/Teradata into Amazon Redshift
+      - Provide ad-hoc support to the migration team
+    deliverables:
+      - Verified dbt models deployed on Apache Airflow replacing legacy Informatica/Teradata ETL
+    tech: [teradata, redshift, informatica, dbt, airflow, sql, git]
+
+  - title: Compliance Management Dashboards
+    client: US Bank
+    location: Remote · United States
     domain: banking
-    team_size: 8
-    period: 2024 — present
+    team_size: 3-5
+    period: 2022 — 2024
     responsibilities:
-      - Designed the lakehouse architecture for daily regulatory feeds
-      - Led a squad of 3 data engineers, owned delivery roadmap
-      - Introduced data quality gates and SLA monitoring
+      - Build data models and develop key non-financial-risk & compliance metrics
+      - Develop Power BI dashboards and paginated reports
+      - Implement an advanced Row-Level Security model
+      - Technical testing, UATs, deployment-pipeline maintenance, and customer training
     deliverables:
-      - Spark-based ingestion framework processing 2 TB/day
-      - Automated BCBS 239 lineage documentation
-      - Self-service dbt models for the reporting team
-    tech: [python, sql, spark, dbt, snowflake, airflow, aws, terraform]
+      - Vertica/Impala data mart sourced from the enterprise data lake
+      - Interactive dashboards and paginated reports for non-financial risk & compliance monitoring
+      - Secure, governed reporting with advanced RLS meeting strict data-governance standards
+    tech: [powerbi, vertica, impala, sql, git]
 
-  - title: Real-time Transaction Fraud Signals
-    client: Retail Bank
-    location: Warsaw, Poland
-    domain: banking
-    team_size: 5
-    period: 2023 — 2024
-    responsibilities:
-      - Built streaming feature pipelines for the fraud ML team
-      - Defined schema governance for event contracts
-    deliverables:
-      - Kafka + Flink pipeline with sub-second feature latency
-      - Feature store backed by Redis with 40+ online features
-    tech: [python, kafka, flink, redis, postgres, kubernetes, docker]
-
-  - title: Production Telemetry Ingestion
-    client: Oil & Gas Operator
-    location: Stavanger, Norway
-    domain: oilgas
-    team_size: 6
-    period: 2022 — 2023
-    responsibilities:
-      - Integrated 200+ rig sensors into a central telemetry platform
-      - Owned CI/CD and infrastructure-as-code setup
-    deliverables:
-      - IoT ingestion layer on GCP handling 50k events/sec
-      - Grafana dashboards for production monitoring
-    tech: [python, kafka, bigquery, gcp, terraform, grafana, docker]
-
-  - title: Fleet Analytics Data Mart
-    client: Pan-European Logistics Provider
-    location: Rotterdam, Netherlands
-    domain: logistics
-    team_size: 4
+  - title: BI Supply Chain Solutions
+    client: US Manufacturer
+    location: Wrocław, Poland
+    domain: manufacturing
+    team_size: 6-8
     period: 2021 — 2022
     responsibilities:
-      - Modeled the fleet & route data mart used by 30 analysts
-      - Migrated legacy SSIS jobs to a modern ELT stack
+      - Develop new BI solutions and modify existing ones as part of a Scrum team
+      - Analyze and review business requirements, translating them into functional design
+      - Maintain reporting applications — specs, configuration, programming, testing, implementation
     deliverables:
-      - dbt + Snowflake data mart with documented models
-      - Power BI reporting suite for on-time-delivery KPIs
-    tech: [sql, dbt, snowflake, airflow, powerbi, python]
+      - Supply-chain reports and dashboards for business users across all EMEA plants, warehouses and distribution centers
+      - Data models and SQL analysis backing the reporting suite
+    tech: [powerbi, qlikview, sapbo, saphana, mssql, teradata, sql]
+
+  - title: EMEA ETL Solutions
+    client: US Manufacturer
+    location: Wrocław, Poland
+    domain: manufacturing
+    team_size: 2-3
+    period: 2021 — 2022
+    responsibilities:
+      - Monitor IBM Mainframe (z/OS) data loads within Teradata ETL processes
+      - Maintain and modify existing MS SSIS jobs and packages
+      - Optimize SQL queries to new standards and business requirements
+      - Analyze errors and incidents related to ETL flows and data quality
+    deliverables:
+      - Maintained legacy ETL landscape centralizing data from multiple ERP systems in Teradata
+      - SSIS jobs feeding custom business applications and reports
+    tech: [teradata, ssis, sql]
+
+  - title: BI Transportation Solutions
+    client: Multiple Contracted Customers
+    location: Wrocław, Poland
+    domain: logistics
+    team_size: 2-4
+    period: 2020 — 2021
+    responsibilities:
+      - Data analysis and report development & maintenance for internal and external stakeholders
+      - Maintain technical and user reporting documentation
+      - Provide technical support to operational teams and manage the ticketing queue
+    deliverables:
+      - Tableau and SAP BusinessObjects reports over Oracle for transportation customers
+      - Ad-hoc SQL/Tableau analysis delivered to customer requirements
+    tech: [tableau, oracle, sapbo, sql]
+
+  - title: Robotic Process Automation Implementation
+    client: Swiss Company
+    location: Wrocław, Poland
+    domain: logistics
+    team_size: 3-7
+    period: 2020 — 2021
+    responsibilities:
+      - Analyze manual operational tasks and business requirements for automation potential
+      - Translate requirements into technical solutions using block diagrams
+      - Develop automations, validate UATs, and train users
+      - Resolve issues and manage change requests
+    deliverables:
+      - Stand-alone UiPath RPA team framework covering the full development cycle
+      - Automation solutions delivered to internal operational teams on UiPath Studio/Orchestrator
+    tech: [uipath, oracle, kibana, sql]
