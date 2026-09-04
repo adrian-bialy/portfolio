@@ -4,8 +4,43 @@
 # Ordered most-recent first.
 
 projects:
-  - title: Launchpad Data Ingestion Platform
-    client: Norwegian Company
+  - title: Agentic AI Platform for Oil & Gas Data Engineering
+    client: Norwegian Oil & Gas Company
+    location: Remote · Norway
+    domain: ai-systems
+    team_size: "3"
+    period: 2026 — present
+    responsibilities:
+      - Design and develop a multi-agent LLM system (Microsoft Agent Framework, Azure AI Foundry) answering cited questions across a multi-repo data platform and live Databricks/Fabric/SQL estates
+      - Build hybrid RAG retrieval (BM25 + vector search with rank fusion, Azure AI Search) over code, governance docs, and cross-user chat memory
+      - Implement sandboxed agent tooling — read-only containerized shell, layered read-only SQL access, MCP integrations, allow-listed web fetch
+      - Develop async PostgreSQL persistence for conversations, agent state, and semantic chat memory (SQLAlchemy/Alembic)
+    deliverables:
+      - Multi-agent assistant — reasoning agent, human-approved coding agent on sandboxed git worktrees, and cited Q&A agent — serving 3 products across 3 environments
+      - Config-driven multi-tenancy where onboarding a new product domain requires configuration only, no code changes
+      - Cross-repo data-lineage answering ("how is table X loaded for use case Y") with file-and-line citations
+    tech: [python, fastapi, postgres, sqlalchemy, docker, kubernetes, azure, azure-ai, agent-framework, codex, mcp, aisearch, databricks, fabric, githubactions]
+
+  - title: 3D Print Pricing Engine & Self-Hosted Backend Platform
+    client: MINIATURIA x AIRLAB (own venture)
+    location: Wrocław, Poland
+    domain: backend-platform
+    team_size: "2"
+    period: 2025 — present
+    responsibilities:
+      - Design and build the pricing backend quoting uploaded STL/OBJ meshes — mesh geometry analysis, per-technology print-time models calibrated by least squares against measured prints, and a full cost model (materials, geometry-derived labor, power, machine-hours, margin, VAT) with live NBP FX conversion
+      - Architect the async pipeline on Azure Functions (Blob SAS direct upload → Storage Queue → worker, Entra ID JWT auth), later re-architected as a containerized synchronous FastAPI service with the Azure deployment kept as warm standby
+      - Operate a self-hosted homelab platform — Docker Compose services behind Traefik (Cloudflare DNS-01 TLS), PostgreSQL 17, WireGuard, Prometheus/Grafana/Loki monitoring, and restic backups to Azure with a dead-man switch
+      - Build CI/CD with GitHub Actions — OIDC-federated Azure auth with no stored secrets, self-hosted runner, per-SHA immutable images, approval-gated production deploys
+    deliverables:
+      - Public pricing estimator on the company storefront — Odoo 18 addon calling the backend server-side and converting estimates into sales quotations
+      - Geometry-derived labor estimation with 2.2 min mean absolute error vs operator reference data
+      - Self-hosted CI/CD with Odoo.sh feature parity — staging rebuilt from prod backups with payment/mail neutralization, changed-module diffing, pre-deploy backup and health gate
+      - Invoicing (KSeF), parcel-locker shipping, and marketplace order-ingestion integrations
+    tech: [python, fastapi, sqlalchemy, postgres, docker, traefik, azure, terraform, ansible, prometheus, grafana, odoo, githubactions]
+
+  - title: Config-Driven Data Ingestion Platform
+    client: Norwegian Oil & Gas Company
     location: Remote · Norway
     domain: data-platform
     team_size: 5-10

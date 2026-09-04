@@ -407,6 +407,14 @@ body {
   overflow: hidden;
 }
 
+/* Same white backdrop as .icon-badge: brand logos (colorful or
+   near-black) are illegible on the dark theme's near-black tile.
+   Scoped to tiles that hold an image so emoji fallbacks keep the
+   themed background. */
+.edu-logo:has(img) {
+  background: #ffffff;
+}
+
 .edu-logo img {
   width: 100%;
   height: 100%;

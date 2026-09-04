@@ -5,8 +5,9 @@
 # `emoji` is shown as a fallback if the icon is missing/fails to load,
 # and as a decorative accent. Logos are self-hosted SVGs under
 # assets/logos/ (sourced from Simple Icons / vendor marks). SQL, DAX,
-# VBA, SSIS, Vertica and MS SQL Server have no freely-licensed vendor
-# logo, so they keep their emoji.
+# VBA, SSIS, Vertica, MS SQL Server, Microsoft Agent Framework,
+# Azure AI Foundry, Azure AI Search and Microsoft Fabric have no
+# freely-licensed vendor logo, so they keep their emoji.
 
 categories:
   - name: Languages
@@ -18,6 +19,15 @@ categories:
       - { id: bash, name: Bash, emoji: "🐚", icon: "assets/logos/gnubash.svg" }
       - { id: vba, name: VBA, emoji: "📎" }
 
+  - name: AI & Agentic Systems
+    emoji: "🤖"
+    skills:
+      - { id: agent-framework, name: Microsoft Agent Framework, emoji: "🕸️" }
+      - { id: azure-ai, name: Azure AI Foundry / OpenAI, emoji: "🧠" }
+      - { id: codex, name: OpenAI Codex SDK, emoji: "⌨️", icon: "assets/logos/openai.svg" }
+      - { id: mcp, name: Model Context Protocol, emoji: "🔌", icon: "assets/logos/mcp.svg" }
+      - { id: aisearch, name: Azure AI Search (RAG), emoji: "🔎" }
+
   - name: Data Engineering & ETL
     emoji: "🔄"
     skills:
@@ -25,6 +35,7 @@ categories:
       - { id: spark, name: PySpark, emoji: "⚡", icon: "assets/logos/apachespark.svg" }
       - { id: dbt, name: dbt, emoji: "🔶", icon: "assets/logos/dbt.svg" }
       - { id: airflow, name: Apache Airflow, emoji: "🌬️", icon: "assets/logos/apacheairflow.svg" }
+      - { id: fabric, name: Microsoft Fabric, emoji: "🧵" }
       - { id: ssis, name: SSIS, emoji: "🔀" }
       - { id: informatica, name: Informatica, emoji: "ℹ️", icon: "assets/logos/informatica.svg" }
 
@@ -59,13 +70,19 @@ categories:
       - { id: kubernetes, name: Kubernetes, emoji: "☸️", icon: "assets/logos/kubernetes.svg" }
       - { id: terraform, name: Terraform, emoji: "🏗️", icon: "assets/logos/terraform.svg" }
       - { id: githubactions, name: CI/CD (GitHub Actions), emoji: "🔁", icon: "assets/logos/githubactions.svg" }
+      - { id: ansible, name: Ansible, emoji: "🅰️", icon: "assets/logos/ansible.svg" }
       - { id: git, name: Git, emoji: "🔧", icon: "assets/logos/git.svg" }
       - { id: nginx, name: Nginx, emoji: "🌐", icon: "assets/logos/nginx.svg" }
+      - { id: traefik, name: Traefik, emoji: "🚦", icon: "assets/logos/traefik.svg" }
+      - { id: prometheus, name: Prometheus, emoji: "🔥", icon: "assets/logos/prometheus.svg" }
+      - { id: grafana, name: Grafana, emoji: "📉", icon: "assets/logos/grafana.svg" }
 
   - name: Backend & Automation
     emoji: "🧰"
     skills:
       - { id: fastapi, name: FastAPI, emoji: "⚡", icon: "assets/logos/fastapi.svg" }
+      - { id: sqlalchemy, name: SQLAlchemy / Alembic, emoji: "🧪", icon: "assets/logos/sqlalchemy.svg" }
+      - { id: odoo, name: Odoo 18, emoji: "🛍️", icon: "assets/logos/odoo.svg" }
       - { id: postman, name: Postman, emoji: "📮", icon: "assets/logos/postman.svg" }
       - { id: uipath, name: UiPath, emoji: "🤖", icon: "assets/logos/uipath.svg" }
       - { id: kibana, name: Kibana, emoji: "📟", icon: "assets/logos/kibana.svg" }

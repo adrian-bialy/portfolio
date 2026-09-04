@@ -2,6 +2,16 @@
 # `id` is referenced from projects.yaml (domain: ...) — keep ids stable.
 
 domains:
+  - id: ai-systems
+    name: AI & Agentic Systems
+    emoji: "🤖"
+    blurb: Multi-agent LLM systems with hybrid RAG, sandboxed agent tooling, and MCP integrations for oil & gas data platforms.
+
+  - id: backend-platform
+    name: Backend & Platform Engineering
+    emoji: "🧩"
+    blurb: FastAPI services, async job pipelines, and self-hosted platform operations — from cloud functions to homelab infrastructure.
+
   - id: data-platform
     name: Data Platform Engineering
     emoji: "⚙️"
